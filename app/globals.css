@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --sea-abyss: #021812;
+  --sea-deep: #042820;
+  --sea-emerald: #0a3d2e;
+  --sea-green: #0f5240;
+  --neon-mint: #3dffb8;
+  --glow-mint: #7affd4;
+  --soft-glow: #b8ffe8;
+}
+
+@theme inline {
+  --color-background: var(--sea-abyss);
+  --color-foreground: var(--glow-mint);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--sea-abyss);
+  color: var(--glow-mint);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(61, 255, 184, 0.25);
+  color: var(--soft-glow);
+}
