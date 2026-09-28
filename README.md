@@ -1,36 +1,40 @@
-# My DIU
+# MY DIU
 
-> **A modern digital campus experience for exploring student-focused university services.**
+![Cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=MY%20DIU&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=DIGITAL%20CAMPUS&descColor=999991&descSize=12&descAlignY=66&animation=fadeIn)
 
-My DIU is a Next.js web application concept focused on bringing campus information, student workflows and a clean digital experience into one place.
+> **DIGITAL CAMPUS.**
 
-## Highlights
-- Modern Next.js application architecture
-- Reusable component system
-- Responsive campus-oriented interface
-- App Router foundation
-- Designed for future service integrations
+## THE PREMISE
 
-## Stack
+My DIU explores what a university digital layer could feel like when campus information, student workflows and everyday services are designed as one experience.
+
+## THE EXPERIENCE
+
+**One campus, one digital rhythm.**  
+**Put utility within reach.**  
+**Make student workflows feel intentional.**
+
+## THE SYSTEM
+
+A Next.js application foundation provides the shell for reusable campus components and future university-service integrations.
+
+## THE STACK
+
 Next.js · React · TypeScript · Tailwind CSS
 
-## Run locally
-~~~bash
+## RUN
+
+```bash
 npm install
 npm run dev
-~~~
+```
 
-Open localhost:3000 in your browser.
+## PROJECT STATE
 
-Production build:
+**Digital-campus product concept**
 
-~~~bash
-npm run build
-npm start
-~~~
+Implemented behaviour is documented separately from future integrations so the project story stays honest as the product evolves.
 
-## Status
-**Campus product prototype**
+---
 
-## Author
-**K. Kishor Kumar** · [GitHub @Kishordiu](https://github.com/Kishordiu)
+<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
