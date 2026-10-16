@@ -121,6 +121,7 @@ export function useSeaAnimation({ state }: UseSeaAnimationOptions) {
   const configRef = useRef<SeaStateConfig>(SEA_STATE_CONFIG.idle);
   const targetConfigRef = useRef<SeaStateConfig>(SEA_STATE_CONFIG[state]);
   const animationRef = useRef<number>(0);
+  const animateRef = useRef<FrameRequestCallback>(() => {});
   const timeRef = useRef(0);
 
   useEffect(() => {
@@ -143,7 +144,7 @@ export function useSeaAnimation({ state }: UseSeaAnimationOptions) {
     timeRef.current += 0.016;
     drawSea(ctx, canvas.width, canvas.height, timeRef.current, configRef.current);
 
-    animationRef.current = requestAnimationFrame(animate);
+    animationRef.current = requestAnimationFrame((time) => animateRef.current(time));
   }, []);
 
   const resize = useCallback(() => {
@@ -160,6 +161,7 @@ export function useSeaAnimation({ state }: UseSeaAnimationOptions) {
   }, []);
 
   useEffect(() => {
+    animateRef.current = animate;
     resize();
     window.addEventListener("resize", resize);
     animationRef.current = requestAnimationFrame(animate);
