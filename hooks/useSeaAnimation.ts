@@ -122,7 +122,6 @@ export function useSeaAnimation({ state }: UseSeaAnimationOptions) {
   const targetConfigRef = useRef<SeaStateConfig>(SEA_STATE_CONFIG[state]);
   const animationRef = useRef<number>(0);
   const animateRef = useRef<FrameRequestCallback>(() => {});
-  const animateRef = useRef<FrameRequestCallback>(() => {});
   const timeRef = useRef(0);
 
   useEffect(() => {
