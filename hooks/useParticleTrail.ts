@@ -10,6 +10,7 @@ export function useParticleTrail() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointsRef = useRef<TrailPoint[]>([]);
   const animationRef = useRef<number>(0);
+  const drawTrailRef = useRef<FrameRequestCallback>(() => {});
   const isTouchRef = useRef(false);
 
   const addPoint = useCallback((x: number, y: number) => {
@@ -74,7 +75,7 @@ export function useParticleTrail() {
       }
     }
 
-    animationRef.current = requestAnimationFrame(drawTrail);
+    animationRef.current = requestAnimationFrame((time) => drawTrailRef.current(time));
   }, []);
 
   const resize = useCallback(() => {
@@ -88,6 +89,7 @@ export function useParticleTrail() {
   }, []);
 
   useEffect(() => {
+    drawTrailRef.current = drawTrail;
     resize();
     window.addEventListener("resize", resize);
     animationRef.current = requestAnimationFrame(drawTrail);
