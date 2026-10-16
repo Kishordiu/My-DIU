@@ -92,7 +92,7 @@ export function useParticleTrail() {
     drawTrailRef.current = drawTrail;
     resize();
     window.addEventListener("resize", resize);
-    animationRef.current = requestAnimationFrame(drawTrail);
+    animationRef.current = requestAnimationFrame((time) => drawTrailRef.current(time));
 
     const handleMove = (e: MouseEvent) => {
       if (isTouchRef.current) return;
