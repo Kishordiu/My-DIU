@@ -1,5 +1,7 @@
 ![MY DIU — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
+# MY DIU
+
 > **DIGITAL CAMPUS.**
 
 ## THE PREMISE
