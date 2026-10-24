@@ -1,6 +1,4 @@
-# MY DIU
-
-![Cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=MY%20DIU&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=DIGITAL%20CAMPUS&descColor=999991&descSize=12&descAlignY=66&animation=fadeIn)
+![MY DIU — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
 > **DIGITAL CAMPUS.**
 
