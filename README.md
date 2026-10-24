@@ -2,39 +2,44 @@
 
 # MY DIU
 
-> **DIGITAL CAMPUS.**
+**A digital-campus product concept for bringing everyday student workflows into one considered experience.**
 
-## THE PREMISE
+My DIU explores how campus information, student-facing tools, and routine university workflows might be organised into one coherent digital layer. The repository is a Next.js application foundation; do not assume university systems or institutional data are connected merely because the interface exists.
 
-My DIU explores what a university digital layer could feel like when campus information, student workflows and everyday services are designed as one experience.
+## Product map
 
-## THE EXPERIENCE
+| Surface | Intended role |
+|---|---|
+| Campus overview | Give students a useful starting point |
+| Student workflows | Bring common tasks into a consistent interaction pattern |
+| Information architecture | Make campus resources easier to find |
+| Extensible components | Keep future services modular rather than hard-wired into one page |
 
-**One campus, one digital rhythm.**  
-**Put utility within reach.**  
-**Make student workflows feel intentional.**
+## Build philosophy
 
-## THE SYSTEM
+A campus interface should make the next useful action obvious, use familiar language, remain responsive on mobile, and give clear feedback when a task is complete or unavailable. Institutional workflows must also treat identity, access, and student data as first-class concerns.
 
-A Next.js application foundation provides the shell for reusable campus components and future university-service integrations.
+## Stack
 
-## THE STACK
+Next.js · React · TypeScript · Framer Motion
 
-Next.js · React · TypeScript · Tailwind CSS
+## Run locally
 
-## RUN
+**Requirements:** Node.js and npm.
 
 ```bash
-npm install
+git clone https://github.com/Kishordiu/My-DIU.git
+cd My-DIU
+npm ci
 npm run dev
 ```
 
-## PROJECT STATE
+Open the local URL printed by Next.js, usually [http://localhost:3000](http://localhost:3000).
 
-**Digital-campus product concept**
+## Status and data boundary
 
-Implemented behaviour is documented separately from future integrations so the project story stays honest as the product evolves.
+**Status: digital-campus product concept.** Authentication, student records, timetables, attendance, grades, notifications, and university integrations must be verified individually before the project is described as connected to official campus systems. Do not load real student information into an unreviewed deployment.
 
 ---
 
-<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
+<p align="center"><sub>DIU FOUNDRY · CAMPUS EXPERIENCE / PRODUCT ENGINEERING</sub></p>
